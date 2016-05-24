@@ -4,21 +4,29 @@
     <meta charset="utf-8">
   <title> Guess A Number! </title> 
     <link rel="stylesheet" href="guessing-game.css">
+  <script src='guessing-game.js'></script>
   </head>
   <body>
 
-    <h1> Ohhh this is going to be so much fun! Guess a Number</h1>
+    <div class= "Dirty-Harry-img">
+      <img src="images\Clint Eastwood.jpg" alt = "Dirty-Harry">
+      <p class="caption"> Do ya feel lucky? Well, do ya, punk?</p> 
+    </div>  
 
             <h2 id='guess'>Guess The Number</h2>
             <h3>Input a number from 1-100</h3>
 					 <div class='main-box'>
 						 <input type="text" id='playersGuess' class='form-control input' onkeydown="if (event.keyCode ===13) doesNumberToGuessExist()" />
-						 <h3 id='status'></h3>
-	           <button type='button' id='playersGuess' onclick='doesNumberToGuessExist()' class="btn btn-lg btn-info">Submit</button>
+						 <h3 id='correct'> You win!</h3>
+             <h3 id='wrong'>Try again!</h3>
+             <h3 id='duplicate'>Duplicate guess, Try again!</h3>
+             <p class = 'guessFeedback1'>Your guess was too high!</p>
+             <p class = 'guessFeedback2'>Your guess is too low!</p>
+	           <button type='button' id='playersGuess'>Submit</button>
            </div>
            <div class='buttons'>
-	           <button type='button'id='playersGuess' onclick='playAgain()' class="btn btn-lg btn-default">Play Again</button>
-	           <button type='button' id='playersGuess' onclick='hint()' class= 'btn btn-lg btn-default'>Give me a Hint</button>
+	           <button type='button'id='playAgain'>Play Again</button>
+	           <button type='button' id='Hint'>Hint?</button>
            </div>
            <h3 id='guess-count'> Only 8 Guesses Remaining! </h3>
 

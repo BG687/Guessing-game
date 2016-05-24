@@ -1,14 +1,45 @@
+
+.Dirty-Harry-img img {
+	height: 300px;
+	width: 500px;
+	margin: 0 auto;
+}
+.caption {
+	display: block;
+	text-align: center;
+	width: 500px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
 .input {
 	width: 200px;
 	height: 75px;
 	display: block;
 }
 
-#status {
+#correct {
 	display: none;
 }
 
+#duplicate {
+	display:none;
+}
+
+#wrong {
+	display:none;
+}
+
 #image {
+}
+
+.guessFeedback1{
+	display: none;
+}
+
+.guessFeedback2{
+	display: none;
 }
 
 .buttons {
