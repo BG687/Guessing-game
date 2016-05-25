@@ -1,7 +1,8 @@
 /* **** Global Variables **** */
 // try to elminate these global variables in your project, these are here just to start.
+
 $(document).ready(function(){
-	alert("js is running");
+	// alert("js is running"); great way to test and see if your js files are linked to your html file.
 var playersGuess;
 var winningNumber = generateWinningNumber();
 var prevGuesses = [];
